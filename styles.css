@@ -1,3 +1,34 @@
 header {
-    background: rgb(40, 100, 100);
+    background: rgb(75, 177, 177);
+}
+
+img {
+    width: auto;
+    height: 200px;
+}
+
+.wrapper {
+    margin-inline: auto;   /* makes the wrapper centered by checking l&r */
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 3rem;
+}
+
+.grids {
+    --grid-min-col-size: 250px;
+
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: /* fits as many projects with a min size of 250px or whatever fills up the page */
+        repeat(auto-fit, minmax(min(var(--grid-min-col-size), 100%), auto));
+    /* auto-fill instead keeps the min size and leaves the extra project space (good if you want to keep the same size for each project regardless */
+    /* https://www.youtube.com/watch?v=bj0Z_GncIwY */
+}
+
+/* Does an action based on a certain "media inquiry"*/
+@media (min-width: 760px) {
+    
 }
