@@ -1,10 +1,14 @@
+/* Reset default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     background: #D6E6F2;
 }
-
-/* header {
-    background: rgb(75, 177, 177);
-} */
 
 img {
     width: auto;
@@ -32,49 +36,80 @@ img {
     /* https://www.youtube.com/watch?v=bj0Z_GncIwY */
 }
 
-/* Does an action based on a certain "media inquiry"*/
+/* Does an action based on a certain "media inquiry"
 @media (min-width: 760px) {
     
+} */
+
+
+/* Adjust body content to not go under fixed header */
+body {
+    padding-top: 60px; /* Adjust based on header height */
+}
+
+
+.top-header {
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #B9D7EA;
+    color: white;
+    z-index: 1001;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between; /* left and right spacing */
+    padding: 14px 20px;
+}
+
+.site-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #769FCD;
 }
 
 /* Navigation system */
-.topnav {
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
-}
-
-/* Hide the links inside the navigation menu */
-.topnav #myLinks {
-    display: none;
-}
-
-/* Style navigational menu links */
-.topnav a {
-    color: #F7FBFC;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-}
-
-/* Style the hamburger menu */
-.topnav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
     top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
 }
 
-/* Add a grey bg color on mouse-over */
-.topnav a:hover {
-    background-color: #B9D7EA;
-    color: black;
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 
-/* Style the active link */
-.active {
-    background-color: #769FCD;
-    color: white;
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
