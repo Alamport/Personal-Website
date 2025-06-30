@@ -1,0 +1,151 @@
+/* ================================
+   🔧 Global Reset and Base Styles
+   ================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    background: #D6E6F2;
+    font-family: system-ui, sans-serif;
+}
+
+body {
+    padding-top: 60px; /* Prevent content from hiding behind fixed header */
+}
+
+/* ================================
+   📦 Layout Wrappers
+   ================================ */
+.wrapper {
+    margin-inline: auto;
+    padding: 1rem;
+}
+
+/* ================================
+   🖼️ Image Styling
+   ================================ */
+img {
+    width: auto;
+    height: 200px;
+}
+
+/* ================================
+   🧠 Skills List
+   ================================ */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 3rem;
+    margin-top: 1rem;
+}
+
+/* ================================
+   🗂️ Project Grid
+   ================================ */
+.grids {
+    --grid-min-col-size: 250px;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(var(--grid-min-col-size), 100%), auto));
+}
+
+/* ================================
+   🧭 Fixed Header
+   ================================ */
+.top-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #B9D7EA;
+    z-index: 1001;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+}
+
+.site-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #769FCD;
+}
+
+/* ================================
+   🍔 Hamburger Icon
+   ================================ */
+.ham {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    background: none;
+    border: none;
+}
+
+/* ================================
+   📜 Sidebar Navigation
+   ================================ */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    z-index: 1002;
+}
+
+.sidenav a {
+    padding: 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+/* Responsive Sidebar Tuning */
+@media screen and (max-height: 450px) {
+    .sidenav { padding-top: 15px; }
+    .sidenav a { font-size: 18px; }
+}
+
+/* ================================
+   📄 Main Content Area
+   ================================ */
+main {
+    padding: 1rem;
+}
+
+/* ================================
+   🔚 Footer (add content here)
+   ================================ */
+/* Example:
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #769FCD;
+    color: white;
+}
+*/
