@@ -1,6 +1,10 @@
-header {
-    background: rgb(75, 177, 177);
+body {
+    background: #D6E6F2;
 }
+
+/* header {
+    background: rgb(75, 177, 177);
+} */
 
 img {
     width: auto;
@@ -31,4 +35,46 @@ img {
 /* Does an action based on a certain "media inquiry"*/
 @media (min-width: 760px) {
     
+}
+
+/* Navigation system */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+
+/* Hide the links inside the navigation menu */
+.topnav #myLinks {
+    display: none;
+}
+
+/* Style navigational menu links */
+.topnav a {
+    color: #F7FBFC;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Add a grey bg color on mouse-over */
+.topnav a:hover {
+    background-color: #B9D7EA;
+    color: black;
+}
+
+/* Style the active link */
+.active {
+    background-color: #769FCD;
+    color: white;
 }
