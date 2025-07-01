@@ -20,9 +20,9 @@ body {
     /* background-image: url("images/a.jpg"); */
 }
 
-h2 {
+/* h2 {
     text-align: center;
-}
+} */
 
 /* img {
     width: auto;
@@ -38,12 +38,6 @@ h2 {
     flex-wrap: wrap;
     gap: 1rem 3rem;
 }
-
-
-/* Does an action based on a certain "media inquiry"
-@media (min-width: 760px) {
-    
-} */
 
 
 /* Adjust body content to not go under fixed header */
@@ -126,7 +120,7 @@ body {
   .sidenav a {font-size: 18px;}
 }
 
-/* Main Page */
+/* MAIN PAGE */
 .bg-container {
   background-color: var(--pearl-bush);
   min-height: 100vh;
@@ -165,7 +159,19 @@ body {
   transition: color 0.5s;
 }
 
-/* Project */
+/* PROJECTS */
+.project-section {
+    padding: 3rem;
+    background-color: #bfb9a4;
+    /* #bfb9a4 / e1dcd2 */
+}
+
+.project-section h2 {
+    font-family: "Courier New";
+    text-align: center;
+    font-size: 40px;
+}
+
 .grids {
     --grid-min-col-size: 200px;
 
