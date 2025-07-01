@@ -150,6 +150,33 @@ body {
   opacity: 1;
 }
 
+
+/* .about-me {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  max-width: 500px;
+  text-align: center;
+  opacity: 1;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  z-index: 10;
+}
+
+.about-me.show {
+  opacity: 1;
+  pointer-events: auto;
+} */
+
+/* .hidden {
+  display: none;
+} */
+
 .content {
   text-align: center;
   color: #333;

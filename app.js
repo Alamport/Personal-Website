@@ -25,3 +25,23 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// function showAboutMe() {
+//   const about = document.getElementById('aboutMe');
+//   about.classList.remove('hidden');
+//   setTimeout(() => {
+//     about.classList.add('show');
+//   }, 10); // delay to allow transition
+//   document.body.onclick = null; // disable further clicks
+// }
+
+// .about-me {
+//     /* display: flex; */
+//     align-items: center;
+
+//     /* Show after clicking */
+//     opacity: 1;
+// }
+
+// .about-me.show-image::after {
+//     opacity: 0;
+// }
