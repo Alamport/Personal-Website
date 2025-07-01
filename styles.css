@@ -1,3 +1,13 @@
+:root {
+  --tussock: #ca9553;
+  --kilamanjaro: #271003;
+  --spicy-mix: #78493f;
+  --pearl-bush: #e1dac9;
+  --slate-gray: #6b8694;
+  --biscay: #1a426a;
+  --red-stage: #d65303;
+}
+
 /* Reset default spacing */
 * {
     margin: 0;
@@ -6,7 +16,7 @@
 }
 
 body {
-    background: #D6E6F2;
+    background: var(--pearl-bush);
 }
 
 main {
@@ -47,7 +57,8 @@ img {
 
 /* Adjust body content to not go under fixed header */
 body {
-    padding-top: 40px; /* Adjust based on header height */
+    padding-top: 50px; /* Adjust based on header height */
+    color: var(--kilamanjaro)
 }
 
 
@@ -56,7 +67,7 @@ body {
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: #B9D7EA;
+    background-color: var(--biscay);
     color: white;
     z-index: 1001;
 }
@@ -70,7 +81,7 @@ body {
 .site-title {
     font-size: 20px;
     font-weight: bold;
-    color: #769FCD;
+    color: var(--pearl-bush);
 }
 
 /* Navigation system */
@@ -90,7 +101,7 @@ body {
 .ham {
     font-size: 25px;
     cursor: pointer;
-    color: white;
+    color: var(--pearl-bush);
     background: none;
     border: none;
 }
@@ -100,7 +111,7 @@ body {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: var(--pearl-bush);
   display: block;
   transition: 0.3s;
 }
