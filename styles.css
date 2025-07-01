@@ -20,14 +20,14 @@ body {
     /* background-image: url("images/a.jpg"); */
 }
 
-main {
-    padding: 1rem;
+h2 {
+    text-align: center;
 }
 
-img {
+/* img {
     width: auto;
     height: 200px;
-}
+} */
 
 .wrapper {
     margin-inline: auto;   /* makes the wrapper centered by checking l&r */
@@ -39,16 +39,6 @@ img {
     gap: 1rem 3rem;
 }
 
-.grids {
-    --grid-min-col-size: 250px;
-
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: /* fits as many projects with a min size of 250px or whatever fills up the page */
-        repeat(auto-fit, minmax(min(var(--grid-min-col-size), 100%), auto));
-    /* auto-fill instead keeps the min size and leaves the extra project space (good if you want to keep the same size for each project regardless */
-    /* https://www.youtube.com/watch?v=bj0Z_GncIwY */
-}
 
 /* Does an action based on a certain "media inquiry"
 @media (min-width: 760px) {
@@ -174,4 +164,48 @@ body {
   border-radius: 12px;
   transition: color 0.5s;
 }
+
+/* Project */
+.grids {
+    --grid-min-col-size: 200px;
+
+    display: grid;
+    padding: 2rem 10rem;
+    gap: 2rem;
+    grid-template-columns: /* fits as many projects with a min size of 250px or whatever fills up the page */
+        repeat(auto-fit, minmax(var(--grid-min-col-size), 1fr));
+    /* auto-fill instead keeps the min size and leaves the extra project space (good if you want to keep the same size for each project regardless */
+    /* https://www.youtube.com/watch?v=bj0Z_GncIwY */
+    align-items: stretch;
+}
+
+.project {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project:hover {
+    transform: translateY(-4px);
+}
+
+.project img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    display: block;
+    /* pointer-events: none; */
+}
+
+
 /* FOOTER */
