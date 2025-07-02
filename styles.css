@@ -284,3 +284,32 @@ body {
 
 
 /* FOOTER */
+.site-footer {
+  background-color: var(--biscay); 
+  color: var(--pearl-bush);
+  padding: 1rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.social-icons a {
+  color: var(--pearl-bush);
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--tussock); 
+}
