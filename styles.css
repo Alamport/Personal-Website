@@ -15,79 +15,65 @@
     box-sizing: border-box;
 }
 
+/* ========================================================================= */
+
 body {
-    background: var(--pearl-bush);
-    /* background-image: url("images/a.jpg"); */
+  background: var(--pearl-bush);
+  padding-top: 50px; /* Adjust based on header height */
 }
-
-/* h2 {
-    text-align: center;
-} */
-
-/* img {
-    width: auto;
-    height: 200px;
-} */
 
 .wrapper {
-    margin-inline: auto;   /* makes the wrapper centered by checking l&r */
+  margin-inline: auto;   /* makes the wrapper centered by checking l&r */
 }
-
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem 3rem;
-}
-
 
 /* Adjust body content to not go under fixed header */
 body {
-    padding-top: 50px; /* Adjust based on header height */
-    color: var(--kilamanjaro)
+  padding-top: 50px; /* Adjust based on header height */
+  color: var(--kilamanjaro)
 }
 
 .top-header {
-    margin: 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    background-color: var(--biscay);
-    color: white;
-    z-index: 1001;
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: var(--biscay);
+  color: white;
+  z-index: 1001;
 }
 
 .header-content {
-    display: flex;
-    justify-content: space-between; /* left and right spacing */
-    padding: 14px 20px;
+  display: flex;
+  justify-content: space-between; /* left and right spacing */
+  padding: 14px 20px;
 }
 
 .site-title {
-    font-size: 20px;
-    font-weight: bold;
-    color: var(--pearl-bush);
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--pearl-bush);
 }
 
 /* Navigation system */
 .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
 }
 
 .ham {
-    font-size: 25px;
-    cursor: pointer;
-    color: var(--pearl-bush);
-    background: none;
-    border: none;
+  font-size: 25px;
+  cursor: pointer;
+  color: var(--pearl-bush);
+  background: none;
+  border: none;
 }
 
 /* The navigation menu links */
@@ -120,6 +106,7 @@ body {
   .sidenav a {font-size: 18px;}
 }
 
+/* ========================================================================= */
 /* MAIN PAGE */
 .bg-container {
   background-color: var(--pearl-bush);
@@ -226,6 +213,8 @@ body {
   transition: color 0.5s;
 }
 
+/* ========================================================================= */
+
 /* PROJECTS */
 .project-section {
     padding: 3rem;
@@ -237,6 +226,12 @@ body {
     font-family: "Courier New";
     text-align: center;
     font-size: 40px;
+}
+
+.project-kills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 3rem;
 }
 
 .grids {
@@ -282,6 +277,7 @@ body {
     /* pointer-events: none; */
 }
 
+/* ========================================================================= */
 
 /* FOOTER */
 .site-footer {
