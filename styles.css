@@ -150,6 +150,54 @@ body {
   opacity: 1;
 }
 
+/* .about-me {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+} */
+
+.about-me {
+  position: absolute;
+  top: 20%;
+  left: 63%;
+  /* transform: translate(-50%, -50%); */
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  width: 90%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 3s ease;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.about-me.show {
+  opacity: 1;
+  transform: translate(-50%, -60%);
+  pointer-events: auto;
+}
+
+.hidden { 
+  display: none;
+}
+
+/* .about-me::after {
+  content: "What do I bring that no one else does";
+  display: block;
+  background-color: white;
+  color: black;
+  width: 8-vw;
+  max-width: 500px;
+  padding: 2rem;
+  border-radius: 1rem;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+} */
 
 /* .about-me {
   position: absolute;
@@ -168,15 +216,7 @@ body {
   z-index: 10;
 }
 
-.about-me.show {
-  opacity: 1;
-  pointer-events: auto;
-} */
-
-/* .hidden {
-  display: none;
-} */
-
+/*  */
 .content {
   text-align: center;
   color: #333;
@@ -203,8 +243,8 @@ body {
     --grid-min-col-size: 200px;
 
     display: grid;
-    padding: 2rem 10rem;
-    gap: 2rem;
+    padding: 1rem 10rem;
+    gap: 5rem;
     grid-template-columns: /* fits as many projects with a min size of 250px or whatever fills up the page */
         repeat(auto-fit, minmax(var(--grid-min-col-size), 1fr));
     /* auto-fill instead keeps the min size and leaves the extra project space (good if you want to keep the same size for each project regardless */
@@ -227,12 +267,14 @@ body {
 }
 
 .project:hover {
-    transform: translateY(-4px);
+    transform: translateY(-0.5rem);
+    /* scale: 1.005; */
+
 }
 
 .project img {
     width: 100%;
-    height: 500px;
+    height: 300px;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 1rem;

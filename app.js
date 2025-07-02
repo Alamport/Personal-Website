@@ -18,10 +18,26 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
+// document.addEventListener('DOMContentLoaded', () => {
+//   const bg = document.getElementById('main-bg');
+//   const aboutMe = document.getElementById('aboutMe');
+//   bg.addEventListener('click', () => {
+//     bg.classList.add('show-image');
+//     aboutMe.classList.add('show-image');
+//   });
+// });
+
 document.addEventListener('DOMContentLoaded', () => {
   const bg = document.getElementById('main-bg');
+  const aboutMe = document.getElementById('aboutMe');
+
   bg.addEventListener('click', () => {
-    bg.classList.add('show-image');
+    bg.classList.add('show-image');             // fade in bg if needed
+    aboutMe.classList.remove('hidden');         // unhide it from layout
+    void aboutMe.offsetWidth;                   // force reflow for transition
+    aboutMe.classList.add('show');              // fade it in
+    bg.style.cursor = 'default';                // remove click cursor
+    bg.onclick = null;                          // prevent repeat clicks
   });
 });
 
