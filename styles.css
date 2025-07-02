@@ -230,12 +230,6 @@ body {
     font-size: 40px;
 }
 
-.project-kills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem 3rem;
-}
-
 .grids {
     --grid-min-col-size: 200px;
 
@@ -265,8 +259,8 @@ body {
 
 .project:hover {
     transform: translateY(-0.5rem);
-    /* scale: 1.005; */
-
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    cursor: grab;
 }
 
 .project img {
@@ -277,6 +271,23 @@ body {
     margin-bottom: 1rem;
     display: block;
     /* pointer-events: none; */
+}
+
+.project-kills {
+    list-style: none; /* remove bullets */
+    display: flex; /* horizontal layout */
+    justify-content: center; /* center horizontally */
+    gap: 1rem; /* space between items */
+    padding: 0;
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+
+.project-kills li {
+    background-color: var(--pearl-bush); /* optional: soft tag style */
+    padding: 0.3rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
 }
 
 /* ========================================================================= */
