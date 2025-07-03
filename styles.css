@@ -51,10 +51,11 @@ body {
     padding: 14px 20px;
 }
 
-.site-title {
+.site-title a{
     font-size: 20px;
     font-weight: bold;
     color: var(--pearl-bush);
+    text-decoration: none;
 }
 
 /* Navigation system */
@@ -228,6 +229,7 @@ body {
     font-family: "Courier New";
     text-align: center;
     font-size: 40px;
+    margin-bottom: 2rem;
 }
 
 .grids {
