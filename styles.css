@@ -333,6 +333,64 @@ body {
 }
 
 /* ========================================================================= */
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left: 50%;
+    margin-left: -3px; 
+    z-index: -1;
+}
+
+.container {
+    padding: 10px 50px;
+    position: relative; 
+    width: 50%;
+    background: red;
+    border-radius: 0.5rem;
+}
+
+.text-box {
+    padding: 20px 30px;
+    background: #fff;
+    position: relative;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.left-container {
+    left: 0;
+}
+
+.right-container {
+    left: 50%;
+}
+
+.container img {
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+}
+
+.right-container img {
+    left: -20px;
+}
+
+/* ========================================================================= */
+
 .contact-container {
     height: 100vh;
     display: flex;
