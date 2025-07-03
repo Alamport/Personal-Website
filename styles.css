@@ -231,11 +231,12 @@ body {
 }
 
 .grids {
-    --grid-min-col-size: 200px;
+    --grid-min-col-size: 400px;
 
     display: grid;
     padding: 1rem 10rem;
     gap: 5rem;
+    grid-auto-rows: 1fr;
     grid-template-columns: /* fits as many projects with a min size of 250px or whatever fills up the page */
         repeat(auto-fit, minmax(var(--grid-min-col-size), 1fr));
     /* auto-fill instead keeps the min size and leaves the extra project space (good if you want to keep the same size for each project regardless */
@@ -273,7 +274,13 @@ body {
     /* pointer-events: none; */
 }
 
-.project-kills {
+.project p {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    opacity: 0.8;
+}
+
+.project-skills {
     list-style: none; /* remove bullets */
     display: flex; /* horizontal layout */
     justify-content: center; /* center horizontally */
@@ -283,7 +290,7 @@ body {
     font-weight: 500;
 }
 
-.project-kills li {
+.project-skills li {
     background-color: var(--pearl-bush); /* optional: soft tag style */
     padding: 0.3rem 0.8rem;
     border-radius: 6px;
