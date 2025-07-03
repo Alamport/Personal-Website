@@ -30,25 +30,25 @@
   </header>
 
   <!-- ==================================================================== -->   
+  <main>
+    <div class="contact-container">
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+        <div class="contact-left-title">
+          <h2>Get in touch!</h2>
+          <hr>
+        </div>
+        <input type="hidden" name="access_key" value="4f6275ad-7de6-4af7-bd62-723e0ccf3b9f">
+        <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+        <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+        <textarea name="message" placeholder="Your Message" class="contact-inputs"></textarea>
+        <button type="submit">Submit</button>
+      </form>
 
-  <div class="contact-container">
-    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
-      <div class="contact-left-title">
-        <h2>Get in touch!</h2>
-        <hr>
+      <div class="contact-right">
+        <img src="images/contact.png" alt="">
       </div>
-      <input type="hidden" name="access_key" value="4f6275ad-7de6-4af7-bd62-723e0ccf3b9f">
-      <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
-      <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
-      <textarea name="message" placeholder="Your Message" class="contact-inputs"></textarea>
-      <button type="submit">Submit</button>
-    </form>
-
-    <div class="contact-right">
-      <img src="images/contact.png" alt="">
     </div>
-  </div>
-
+  </main>
   <!-- ==================================================================== -->
 
   <footer class="site-footer">
@@ -67,5 +67,6 @@
       </div>
     </div>
   </footer>
+  
 </body>
 </html>
