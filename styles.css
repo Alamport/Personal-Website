@@ -21,6 +21,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-padding-top: 60px;
 }
 
 /* ========================================================================= */
@@ -57,7 +58,7 @@ main {
 .header-content {
     display: flex;
     justify-content: space-between; /* left and right spacing */
-    padding: 14px 20px;
+    padding: 1rem 2rem;
 }
 
 .site-title a{
@@ -109,7 +110,7 @@ main {
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 1.5rem;
     font-size: 36px;
     margin-left: 50px;
 }
@@ -241,7 +242,7 @@ main {
 
 /* PROJECTS */
 .project-section {
-    padding: 3rem;
+    /* padding: ; */
     background-color: #bfb9a4;
 }
 
@@ -249,7 +250,9 @@ main {
     font-family: "Courier New";
     text-align: center;
     font-size: 40px;
-    margin-bottom: 2rem;
+    padding: 3rem;
+    /* margin-top: 2rem; */
+    /* margin-bottom: 2rem; */
 }
 
 .grids {
