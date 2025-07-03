@@ -9,8 +9,13 @@
     --red-stage: #d65303;
 
     /* font typography */
+    font-size: 16px;
 }
 
+@font-face {
+    font-family: "Noracle";
+    src: url("Noracle.otf");
+}
 /* Reset default spacing */
 * {
     margin: 0;
@@ -74,6 +79,7 @@ main {
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
+    /* transition: width 0.3s ease; */
 }
 
 .ham {
@@ -106,6 +112,16 @@ main {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+}
+
+.sidenav.open {
+    width: 100vw;
+}
+
+@media (min-width: 450px) {
+    .sidenav.open {
+        width: 200px;
+    }
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -240,7 +256,7 @@ main {
     --grid-min-col-size: 400px;
 
     display: grid;
-    padding: 1rem 10rem;
+    padding: 1rem 5rem; /* top and bottom / left and right */
     gap: 5rem;
     grid-auto-rows: 1fr;
     grid-template-columns: /* fits as many projects with a min size of 250px or whatever fills up the page */
@@ -302,6 +318,31 @@ main {
     border-radius: 6px;
     font-size: 0.9rem;
 }
+
+@media (max-width: 600px) {
+    .project-skills {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem 1rem;
+    }
+  
+    .project-skills li {
+        font-size: 0.8rem;
+        padding: 0.2rem 0.6rem;
+    }
+  
+    .project img {
+        height: 200px;
+    }
+  
+    .grids {
+        padding: 1rem 1rem;
+        gap: 2rem;
+        --grid-min-col-size: 300px;
+        justify-content: center;
+    }
+  }
+  
 
 /* ========================================================================= */
 
@@ -378,7 +419,7 @@ main {
 @keyframes movedown {
     0%{
         opacity: 1;
-        transform: translateY(-30px);
+        transform: translateY(-1rem);
     }
     100% {
         opacity: 1;
@@ -417,11 +458,13 @@ main {
 
 .text-box h2{
     font-weight: 600;
+    font-family: Noracle;
 }
 
 .textbox small {
     display: inline-block;
     margin-bottom: 15px;
+    font-family: Noracle;
 }
 
 .left-container-arrow {
